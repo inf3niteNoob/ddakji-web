@@ -21,8 +21,8 @@ body {
 }
 .button-container {
     position: fixed;
-    left: 10px;
-    top: 50px;
+    right: 10px; /* Move to the right */
+    top: 10px; /* Adjust to the top */
     display: flex;
     flex-direction: column;
     background: white;
