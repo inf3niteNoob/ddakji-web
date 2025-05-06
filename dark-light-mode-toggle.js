@@ -1,4 +1,3 @@
-
 var isDark = false
 
 const toggleDarkMode = () => {
@@ -12,3 +11,7 @@ const toggleDarkMode = () => {
     }
 
 }
+
+const smoothScrollTo = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+};

@@ -36,7 +36,7 @@ body.dark .button-container {
     color: white;
 }
 .button {
-    background-color: #040404; 
+    background: linear-gradient(135deg, #040404, #333333); 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -44,19 +44,26 @@ body.dark .button-container {
     cursor: pointer;
     margin: 5px 0;
     width: 120px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 body.dark .button {
-    background: white;
+    background: linear-gradient(135deg, #ffffff, #cccccc);
     color: black;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
 }
+
 .button:hover {
-    background-color: rgb(100, 100, 100);
+    background: linear-gradient(135deg, #555555, #777777);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 body.dark .button:hover {
-    background-color: rgb(100, 100, 100);
-    
+    background: linear-gradient(135deg, #dddddd, #eeeeee);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(255, 255, 255, 0.3);
 }
 
 .container {
@@ -82,12 +89,33 @@ body.dark .container {
 }
 .section {
     padding: 50px 0;
+    margin: 20px 0;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: #1a1a1a;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+body.dark .section {
+    background: #333;
+    color: white;
+    border-color: #555;
 }
 .section img {
     width: 500px;
     height: 500px;
+    margin-bottom: 20px;
 }
-
+.section h2 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
 
 #title {
     font-size: 50px;
